@@ -219,8 +219,17 @@ function initForm(){
         form.reset();
         msg.className = "form-msg ok";
         msg.textContent = t("form.ok");
-      } else { throw new Error(j.message || "error"); }
+      } else {
+        /* FormSubmit contesta pero no envía: casi siempre es que el
+           formulario aún no está activado. Se enseña lo que dice. */
+        msg.className = "form-msg err";
+        const m = String(j.message || "");
+        msg.innerHTML = (/activat/i.test(m) ? t("form.activar") : esc(m || "Error")) +
+          ' ' + t("form.sinoabre") + ' <a href="mailto:' + mail + '" style="text-decoration:underline">' + mail + '</a>.';
+        console.warn("FormSubmit:", j);
+      }
     }catch(err){
+      console.warn("FormSubmit:", err);
       porCorreo(t("form.abro"));
     }finally{ btn.disabled = false; }
   });
