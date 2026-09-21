@@ -1,0 +1,26 @@
+# ── Lo que NO sube a la web ───────────────────────────────────────
+# Los insumos originales: pesan 350 MB y la web no los usa.
+# Lo que la web sirve está todo en img/caso/ y img/vector/.
+img/*
+!img/caso/
+!img/vector/
+!img/about-gabi.jpg
+!img/hero-hills.jpg
+
+# zips de trabajo y restos
+*.zip
+_to_delete/
+_web-fix/
+ziqqNPal
+descargar-contenido.command
+COPYS-PORTFOLIO-GABI.txt
+
+# macOS
+.DS_Store
+**/.DS_Store
+
+# copias de trabajo de los textos
+copys-web-gabi*.txt
+
+# repositorio vacío creado desde GitHub Desktop
+web local/

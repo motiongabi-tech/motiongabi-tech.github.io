@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>gabi pérez — proyecto</title>
+<meta name="description" content="Proyecto de Gabi Pérez — motion design, ilustración y diseño gráfico.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800&family=Baloo+2:wght@700&family=Modak&family=Plus+Jakarta+Sans:wght@600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body id="project" class="project-page">
+
+<!-- ===== BARRA DE NAVEGACIÓN (la misma de la landing) ===== -->
+<header class="nav" id="nav">
+  <a href="index.html" class="nav-logo">Gabi pérez</a>
+  <nav class="nav-pills">
+    <a href="index.html#about"     class="pill" data-i18n="nav.about">about me</a>
+    <a href="index.html#proyectos" class="pill" data-i18n="nav.proyectos">proyectos</a>
+    <a href="index.html#tags"      class="pill" data-i18n="nav.juega">juega</a>
+    <a href="index.html#contacto"  class="pill" data-i18n="nav.contacto">contacto</a>
+    <span class="lang-switch" role="group" aria-label="Idioma / Language"><button type="button" data-lang="es">ES</button><button type="button" data-lang="en">EN</button></span>
+  </nav>
+</header>
+
+<!-- El caso entero se pinta aquí, con la estructura del Figma -->
+<main id="pCaso"></main>
+
+<!-- ===== VISOR ===== -->
+<div class="lb" id="lb" aria-hidden="true">
+  <button class="x" id="lbX" data-i18n="lb.cerrar">Cerrar ✕</button>
+  <button class="arrow prev" id="lbPrev" aria-label="Anterior" data-i18n-aria="lb.ant">‹</button>
+  <img id="lbImg" alt="">
+  <button class="arrow next" id="lbNext" aria-label="Siguiente" data-i18n-aria="lb.sig">›</button>
+  <span class="cap" id="lbCap"></span>
+</div>
+
+<script src="js/projects.js"></script>
+<script src="js/vectores.js"></script>
+<script src="js/casos.js"></script>
+<script src="js/casos-en.js"></script>
+<script src="js/i18n.js"></script>
+<script src="js/site.js"></script>
+</body>
+</html>

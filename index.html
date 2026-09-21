@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>gabi pérez — motion design, ilustración y diseño gráfico</title>
+<meta name="description" content="Gabi Pérez — motion designer, ilustradora y diseñadora gráfica freelance en Alicante.">
+<meta property="og:title" content="gabi pérez">
+<meta property="og:description" content="Motion design, ilustración y diseño gráfico.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- ===================== NAVBAR ===================== -->
+<header class="nav" id="nav">
+  <a href="#top" class="nav-logo">Gabi pérez</a>
+  <nav class="nav-pills">
+    <a href="#about"     class="pill" data-i18n="nav.about">about me</a>
+    <a href="#proyectos" class="pill" data-i18n="nav.proyectos">proyectos</a>
+    <a href="#tags"      class="pill" data-i18n="nav.juega">juega</a>
+    <a href="#contacto"  class="pill" data-i18n="nav.contacto">contacto</a>
+    <span class="lang-switch" role="group" aria-label="Idioma / Language"><button type="button" data-lang="es">ES</button><button type="button" data-lang="en">EN</button></span>
+  </nav>
+</header>
+
+<!-- ===================== HERO ===================== -->
+<section class="hero" id="top">
+  <div class="hero-bg"></div>
+
+  <div class="hero-inner">
+    <h1 class="hero-title" data-split>Gabi pérez</h1>
+
+    <p class="hero-note">
+      <span data-i18n="hero.note1">Hey there! I do it all illustration / animation /
+      graphic design / photography / IA</span>
+      <span class="dash">————————</span>
+      <span data-i18n="hero.note2">and all the creative magic in between</span>
+    </p>
+
+    <!-- pegatina "Aa" -->
+    <div class="sticky-aa" aria-hidden="true"><span>Aa</span></div>
+
+    <!-- etiqueta de cursor tipo Figma -->
+    <div class="cursor-tag" aria-hidden="true">
+      <div class="cursor-chip">Versión 05_ok</div>
+      <svg class="cursor-arrow" viewBox="0 0 24 24" fill="none">
+        <path d="M4 2l16 9-7 1.6L9.6 20 4 2z" fill="#fff" stroke="#205024" stroke-width="1.4" stroke-linejoin="round"/>
+      </svg>
+    </div>
+  </div>
+
+  <!-- fila de etiquetas sobre las colinas -->
+  <div class="hero-tags">
+    <span class="tag-sm" data-tag="branding">branding</span><span class="tag-sm" data-tag="ads">ads</span>
+    <span class="tag-sm" data-tag="marketing">marketing</span><span class="tag-sm" data-tag="packaging">packaging</span>
+    <span class="tag-sm" data-tag="fotografía">fotografía</span><span class="tag-sm" data-tag="motion graphics">motion graphics</span>
+    <span class="tag-sm" data-tag="diseño">diseño</span><span class="tag-sm" data-tag="ia">ia</span>
+    <span class="tag-sm" data-tag="mailing">mailing</span><span class="tag-sm" data-tag="ilustración">ilustración</span>
+  </div>
+</section>
+
+<!-- ===================== PROYECTOS ===================== -->
+<section class="projects" id="proyectos">
+  <p class="filtro-aviso" id="filtroAviso"></p>
+  <div class="proj-list" id="projList"></div>
+
+  <a class="ver-todos" href="#" id="verTodos">
+    <span class="vt-label" data-i18n="proy.verTodos">ver todos</span>
+    <span class="vt-arrow">→</span>
+  </a>
+
+  <!-- portada que aparece al pasar el ratón -->
+  <figure class="proj-cover" id="projCover" aria-hidden="true">
+    <img id="projCoverImg" alt="">
+  </figure>
+</section>
+
+<!-- ===================== TAGS ===================== -->
+<section class="tags" id="tags">
+  <div class="tag-row">
+    <span class="tag" data-tag="branding">branding</span><span class="tag lime" data-tag="ads">ads</span>
+    <span class="tag" data-tag="marketing">marketing</span><span class="tag lime" data-tag="packaging">packaging</span>
+  </div>
+  <div class="tag-row">
+    <span class="tag lime" data-tag="fotografía">fotografía</span><span class="tag" data-tag="motion graphics">motion graphics</span>
+  </div>
+  <div class="tag-row">
+    <span class="tag" data-tag="diseño">diseño</span><span class="tag lime" data-tag="ia">ia</span>
+    <span class="tag" data-tag="mailing">mailing</span><span class="tag lime" data-tag="ilustración">ilustración</span>
+  </div>
+
+  <!-- ---------- JUEGA: mini runner ---------- -->
+  <div class="game-wrap">
+    <div class="game-head">
+      <span class="game-lbl" data-i18n="juego.lbl">salta las pastillas</span>
+      <span class="game-scores">
+        <span class="sc"><i data-i18n="juego.score">score</i> <b id="juegoScore">00000</b></span>
+        <span class="sc"><i data-i18n="juego.record">récord</i> <b id="juegoBest">00000</b></span>
+      </span>
+    </div>
+
+    <div class="game-box">
+      <canvas id="juego" width="900" height="280"
+              aria-label="Mini juego: salta los obstáculos" data-i18n-aria="juego.aria"></canvas>
+
+      <div class="game-overlay on" id="juegoOverlay">
+        <p class="game-t" id="juegoTitulo" data-i18n="juego.t">¿Jugamos?</p>
+        <button class="game-btn" id="juegoBtn" type="button" data-i18n="juego.btn">Empezar</button>
+        <p class="game-help" data-i18n="juego.help">espacio · flecha arriba · clic — para saltar</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== CONTACTO ===================== -->
+<section class="contact" id="contacto">
+  <h2 class="giant" data-split data-i18n="contacto.tit">Contacto</h2>
+
+  <div class="contact-card">
+    <p class="reach" data-i18n="contacto.reach">REACH US</p>
+
+    <form id="contactForm" data-email="motiongabi@gmail.com" novalidate>
+      <div class="form-cols">
+        <div class="col">
+          <div class="field">
+            <input type="text" name="firstname" id="f-first" placeholder=" " autocomplete="given-name">
+            <label for="f-first" data-i18n="form.nombre">First Name</label>
+          </div>
+          <div class="field">
+            <input type="text" name="lastname" id="f-last" placeholder=" " autocomplete="family-name">
+            <label for="f-last" data-i18n="form.apellido">Last Name</label>
+          </div>
+          <div class="field">
+            <input type="email" name="email" id="f-mail" placeholder=" " autocomplete="email">
+            <label for="f-mail" data-i18n="form.email">Email</label>
+          </div>
+          <label class="perm">
+            <input type="checkbox" name="permission" id="f-perm">
+            <span class="box" aria-hidden="true"></span>
+            <span class="perm-txt" data-i18n="form.permiso">Doy permiso a Gabi Pérez para contactarme en este email.</span>
+          </label>
+        </div>
+
+        <div class="col">
+          <div class="field area">
+            <textarea name="message" id="f-msg" placeholder=" "></textarea>
+            <label for="f-msg" data-i18n="form.mensaje">Type your message here</label>
+          </div>
+          <p class="fine">
+            <span data-i18n="form.fine">Este formulario está protegido y tus datos sólo se usan para responderte. Consulta la</span>
+            <a href="#" data-i18n="form.priv">política de privacidad</a>.
+          </p>
+          <div class="send-bar">
+            <p class="form-msg" id="formMsg" role="status" aria-live="polite"></p>
+            <button type="submit" class="send">
+              <span data-i18n="form.send">Send</span>
+              <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <path d="M5 12h13M13 6l6 6-6 6" stroke="currentColor" stroke-width="2"
+                      stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+      <input type="text" name="_honey" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
+    </form>
+  </div>
+</section>
+
+<!-- ===================== ABOUT ===================== -->
+<section class="about" id="about">
+  <h2 class="giant" data-split data-i18n="about.tit">About me</h2>
+
+  <div class="about-text">
+    <p data-i18n-html="about.p1">HI!<br>
+      I'M GABI, A FREELANCE MOTION DESIGNER, ILLUSTRATOR, AND GRAPHIC DESIGNER, NOW HAPPILY LIVING BY THE BEACH IN ALICANTE, SPAIN.</p>
+    <p data-i18n="about.p2">OVER THE YEARS, I'VE CREATED VISUAL CONTENT FOR BRANDS LIKE CANVA, MAHOU, CORREOS,
+      MINISO, CAPRI-SUN, HERO, LA VANGUARDIA, PLAYMOBIL, AMONG OTHERS. I ENJOY WORKING
+      ACROSS STYLES AND FORMATS TO BRING IDEAS TO LIFE THROUGH DESIGN AND ANIMATION.</p>
+    <p data-i18n="about.p3">I LOVE CREATING THINGS THAT CONNECT WITH PEOPLE — AND IF THEY MOVE OR DANCE A
+      LITTLE, EVEN BETTER :)</p>
+  </div>
+
+  <figure class="about-photo">
+    <img src="img/about-gabi.jpg" alt="Gabi Pérez" loading="lazy">
+  </figure>
+
+  <div class="about-links">
+    <a href="mailto:motiongabi@gmail.com">EMAIL</a>
+    <a href="https://www.linkedin.com/in/gabriella-p%C3%A9rez-bastos-80079b127" target="_blank" rel="noopener">LINKEDIN</a>
+    <a href="#proyectos" data-i18n="about.proyectos">PROYECTOS</a>
+  </div>
+</section>
+
+<footer class="foot">
+  <span>© <span id="yr"></span> Gabi Pérez</span>
+  <span data-i18n="foot.lugar">Alicante, España</span>
+</footer>
+
+<script src="js/projects.js"></script>
+<script src="js/i18n.js"></script>
+<script src="js/site.js"></script>
+<script src="js/juego.js"></script>
+<script>document.getElementById("yr").textContent = new Date().getFullYear();</script>
+</body>
+</html>
