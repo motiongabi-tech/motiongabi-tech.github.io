@@ -55,7 +55,8 @@ const TXT = {
     "caso.volver": "← TODOS LOS PROYECTOS", "caso.sig": "SIGUIENTE PROYECTO",
     "caso.pie": "ALICANTE ES", "caso.disp": "AVAILABLE FOR WORK",
     "caso.comparar": "Comparar antes y después", "caso.antes": "ANTES", "caso.despues": "DESPUÉS",
-    "lb.cerrar": "Cerrar ✕", "lb.ant": "Anterior", "lb.sig": "Siguiente"
+    "lb.cerrar": "Cerrar ✕", "lb.ant": "Anterior", "lb.sig": "Siguiente",
+    "ck.titulo": "Cookies", "ck.txt": "Uso cookies de analítica para saber cuánta gente visita la web. ¿Me dejas?", "ck.si": "Aceptar", "ck.no": "Rechazar"
   },
   en: {
     "meta.title": "gabi pérez — motion design, illustration and graphic design",
@@ -92,7 +93,8 @@ const TXT = {
     "caso.volver": "← ALL PROJECTS", "caso.sig": "NEXT PROJECT",
     "caso.pie": "ALICANTE ES", "caso.disp": "AVAILABLE FOR WORK",
     "caso.comparar": "Compare before and after", "caso.antes": "BEFORE", "caso.despues": "AFTER",
-    "lb.cerrar": "Close ✕", "lb.ant": "Previous", "lb.sig": "Next"
+    "lb.cerrar": "Close ✕", "lb.ant": "Previous", "lb.sig": "Next",
+    "ck.titulo": "Cookies", "ck.txt": "I use analytics cookies to see how many people visit the site. Is that ok?", "ck.si": "Accept", "ck.no": "Decline"
   }
 };
 
