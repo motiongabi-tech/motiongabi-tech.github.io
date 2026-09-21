@@ -205,7 +205,7 @@ function initForm(){
 
     try{
       if (!/^https?:$/.test(location.protocol)) throw new Error("sin servidor");
-      const r = await fetch("https://formsubmit.co/ajax/" + mail, {
+      const r = await fetch("https://formsubmit.co/ajax/" + (form.dataset.fs || mail), {
         method:"POST",
         headers:{"Content-Type":"application/json","Accept":"application/json"},
         body: JSON.stringify({
