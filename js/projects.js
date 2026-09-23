@@ -43,6 +43,18 @@ const vimeo = id => "https://player.vimeo.com/video/" + id;
 
 const PROJECTS = [
 
+  /* ======================================================= REEL */
+  {
+    published:true, tags:["motion graphics", "ilustración", "diseño"],
+    slug:"reel", cover:"img/caso/reel/cover.jpg", title:"Reel", tag:"Motion",
+    sub:"Mix de motion · Showreel 2026",
+    client:"—", year:"2026", role:"Direction · Design · Animation",
+    desc:"A selection of the motion work from the last few years, cut together.\n\nA reel is an argument, not an archive. The job is to show range without the whole thing turning into a list — so the cuts move between 2D and 3D, between brand work and personal work, and the pace is set so no single piece outstays the point it is making.\n\nEverything in it was designed and animated by me.",
+    videos:[vimeo("1123494146")],
+    thumb:img("f28b3a65-cf54-40f1-9edd-55d7c37adbc1_rwc_222x0x1112x870x1280.png?h=d591e2222ec9d7e357d0c97fefb5a357")
+  },
+
+
   /* ======================================================= BRANDING */
   {
     published:true, tags:["branding", "packaging", "fotografía", "diseño", "mailing", "ilustración", "ia"],
@@ -335,13 +347,6 @@ const PROJECTS = [
       img("d09f3c50-1805-4277-9ba7-5c9276f14c0c_rw_1920.png?h=c96821a24dd9727a9c22523f1109c332"),
       img("c3b5df58-b4ea-4143-8db9-3d20d6df2cb8_rw_1920.jpg?h=3363b4cdd841981ba545b982ee5e8f94")
     ]
-  },
-  {
-    slug:"reel", title:"Reel", tag:"Motion", sub:"Showreel 2026",
-    client:"—", year:"2026", role:"Direction · Design · Animation",
-    desc:"A selection of the motion work from the last few years, cut together.\n\nA reel is an argument, not an archive. The job is to show range without the whole thing turning into a list — so the cuts move between 2D and 3D, between brand work and personal work, and the pace is set so no single piece outstays the point it is making.\n\nEverything in it was designed and animated by me.",
-    videos:[vimeo("1123494146")],
-    thumb:img("f28b3a65-cf54-40f1-9edd-55d7c37adbc1_rwc_222x0x1112x870x1280.png?h=d591e2222ec9d7e357d0c97fefb5a357")
   },
   {
     published:true, tags:["ilustración", "diseño"],

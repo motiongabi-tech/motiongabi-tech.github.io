@@ -3754,5 +3754,131 @@ const CASOS = {
    "rotuloInk": "#f4f4f2"
   },
   "siguiente": "ilustraciones"
+ },
+ "reel": {
+  "titulo": "Reel",
+  "hero": {
+   "bg": "#A96BF3",
+   "bgGrad": "linear-gradient(180deg,#8B3FE0 0%,#A96BF3 32%,#D69CF5 58%,#F0D9FB 80%,#FFFFFF 98%)",
+   "ink": "#FFFFFF",
+   "titulo": "Reel",
+   "sub": [
+    "Una selección del trabajo de motion",
+    "de los últimos años, montada en 53 segundos."
+   ],
+   "pills": [
+    [
+     "MOTION GRAPHICS",
+     "rgba(255,255,255,.18)",
+     "#FFFFFF"
+    ],
+    [
+     "2D & 3D",
+     "rgba(255,255,255,.18)",
+     "#FFFFFF"
+    ],
+    [
+     "DIRECCIÓN",
+     "rgba(255,255,255,.18)",
+     "#FFFFFF"
+    ],
+    [
+     "ANIMACIÓN",
+     "rgba(255,255,255,.18)",
+     "#FFFFFF"
+    ]
+   ],
+   "meta": "2026 · SHOWREEL",
+   "imagen": {
+    "src": "img/caso/reel/hero.jpg",
+    "ar": "16/9"
+   }
+  },
+  "marquee": {
+   "bg": "#FFFFFF",
+   "banda": "#8B3FE0",
+   "ink": "#FFFFFF",
+   "sep": "✦",
+   "voces": [
+    "Motion graphics",
+    "2D",
+    "3D",
+    "Ilustración",
+    "Animación"
+   ],
+   "giro": -2.2
+  },
+  "brief": {
+   "bg": "#FFFFFF",
+   "ink": "#0E1318",
+   "ep": "EL REEL",
+   "epInk": "#8B3FE0",
+   "tit": [
+    "Un reel es un argumento,",
+    "no un archivo."
+   ],
+   "txt": [
+    "Una selección del trabajo de motion de los últimos años, montada en una sola pieza.",
+    "Los cortes van del 2D al 3D y del trabajo de marca al personal, con el ritmo puesto para que ninguna pieza se quede más de lo que necesita para decir lo que tiene que decir.",
+    "Todo lo que aparece está diseñado y animado por mí."
+   ],
+   "meta": [
+    [
+     "AÑO",
+     "2026"
+    ],
+    [
+     "MI ROL",
+     "Dirección · Diseño · Animación"
+    ],
+    [
+     "DURACIÓN",
+     "53 segundos"
+    ],
+    [
+     "HERRAMIENTAS",
+     "After Effects · Cinema 4D · Illustrator"
+    ]
+   ],
+   "despues": false
+  },
+  "secciones": [
+   {
+    "ep": "01 / EL REEL",
+    "epInk": "#8B3FE0",
+    "bg": "#0E0A16",
+    "ink": "#F3ECFF",
+    "bloques": [
+     {
+      "tipo": "filas",
+      "filas": [
+       {
+        "cols": "1fr",
+        "piezas": [
+         {
+          "embed": true,
+          "url": "https://player.vimeo.com/video/1123494146?badge=0&autopause=0&player_id=0&app_id=58479",
+          "ar": "16/9"
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "cierre": {
+   "bg": "#A96BF3",
+   "bgGrad": "linear-gradient(180deg,#8B3FE0 0%,#A96BF3 32%,#D69CF5 58%,#F0D9FB 80%,#FFFFFF 98%)",
+   "ink": "#FFFFFF",
+   "rotulo": "Reel",
+   "tools": [
+    "AFTER EFFECTS",
+    "CINEMA 4D",
+    "ILLUSTRATOR",
+    "MOTION GRAPHICS"
+   ]
+  },
+  "siguiente": "victoria"
  }
 };
