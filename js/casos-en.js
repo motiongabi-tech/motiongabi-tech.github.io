@@ -3730,42 +3730,9 @@ const CASOS_EN = {
    ],
    "giro": -2.2
   },
-  "brief": {
-   "bg": "#FFFFFF",
-   "ink": "#0E1318",
-   "ep": "THE REEL",
-   "epInk": "#8B3FE0",
-   "tit": [
-    "A reel is an argument, not an archive."
-   ],
-   "txt": [
-    "A selection of the motion work from the last few years, cut together into a single piece.",
-    "The cuts move between 2D and 3D and between brand work and personal work, and the pace is set so no single piece outstays the point it is making.",
-    "Everything in it was designed and animated by me."
-   ],
-   "meta": [
-    [
-     "YEAR",
-     "2026"
-    ],
-    [
-     "MY ROLE",
-     "Direction · Design · Animation"
-    ],
-    [
-     "LENGTH",
-     "53 seconds"
-    ],
-    [
-     "TOOLS",
-     "After Effects · Cinema 4D · Illustrator"
-    ]
-   ],
-   "despues": false
-  },
   "secciones": [
    {
-    "ep": "01 / THE REEL",
+    "ep": "REEL",
     "epInk": "#8B3FE0",
     "bg": "#0E0A16",
     "ink": "#F3ECFF",

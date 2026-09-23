@@ -3808,43 +3808,9 @@ const CASOS = {
    ],
    "giro": -2.2
   },
-  "brief": {
-   "bg": "#FFFFFF",
-   "ink": "#0E1318",
-   "ep": "EL REEL",
-   "epInk": "#8B3FE0",
-   "tit": [
-    "Un reel es un argumento,",
-    "no un archivo."
-   ],
-   "txt": [
-    "Una selección del trabajo de motion de los últimos años, montada en una sola pieza.",
-    "Los cortes van del 2D al 3D y del trabajo de marca al personal, con el ritmo puesto para que ninguna pieza se quede más de lo que necesita para decir lo que tiene que decir.",
-    "Todo lo que aparece está diseñado y animado por mí."
-   ],
-   "meta": [
-    [
-     "AÑO",
-     "2026"
-    ],
-    [
-     "MI ROL",
-     "Dirección · Diseño · Animación"
-    ],
-    [
-     "DURACIÓN",
-     "53 segundos"
-    ],
-    [
-     "HERRAMIENTAS",
-     "After Effects · Cinema 4D · Illustrator"
-    ]
-   ],
-   "despues": false
-  },
   "secciones": [
    {
-    "ep": "01 / EL REEL",
+    "ep": "REEL",
     "epInk": "#8B3FE0",
     "bg": "#0E0A16",
     "ink": "#F3ECFF",
